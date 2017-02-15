@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import { Platform, MenuController } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
@@ -15,11 +15,12 @@ export class MyApp {
 
   rootPage = HomePage;
 
-  openPage(page: any): void {
+  openPage(page: any, menuSide: string): void {
     this.rootPage = page.component;
+    this.menuCtrl.close(menuSide);
   }
 
-  constructor(platform: Platform) {
+  constructor(platform: Platform, private menuCtrl: MenuController) {
 
     this.pages = [
       {component: HomePage, title: 'Home', icon: 'home'},
