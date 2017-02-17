@@ -5,6 +5,8 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { HomePage } from '../pages/home/home';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 import { GeneratedTestPage } from '../pages/generated-test/generated-test';
+import { ConnectionService } from '../providers/connection-service'
+
 
 @Component({
   templateUrl: 'app.html'
@@ -36,4 +38,7 @@ export class MyApp {
       Splashscreen.hide();
     });
   }
+
 }
+
+//ionicBootstrap(MyApp, [ConnectionService] );
