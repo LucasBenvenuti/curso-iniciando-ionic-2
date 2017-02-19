@@ -8,6 +8,7 @@ import { ConnectionService } from '../providers/connection-service';
 import { AlertPage } from '../pages/alert/alert';
 import { ButtonTestPage } from '../pages/button-test/button-test';
 import { CardTestPage } from '../pages/card-test/card-test';
+import { IconTestPage } from '../pages/icon-test/icon-test';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CardTestPage } from '../pages/card-test/card-test';
     GeneratedTestPage,
     AlertPage,
     ButtonTestPage,
-    CardTestPage
+    CardTestPage,
+    IconTestPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -30,7 +32,8 @@ import { CardTestPage } from '../pages/card-test/card-test';
     GeneratedTestPage,
     AlertPage,
     ButtonTestPage,
-    CardTestPage
+    CardTestPage,
+    IconTestPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

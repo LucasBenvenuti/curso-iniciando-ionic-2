@@ -8,6 +8,7 @@ import { GeneratedTestPage } from '../pages/generated-test/generated-test';
 import { AlertPage } from '../pages/alert/alert';
 import { ButtonTestPage } from '../pages/button-test/button-test';
 import { CardTestPage } from '../pages/card-test/card-test';
+import { IconTestPage } from '../pages/icon-test/icon-test';
 
 
 
@@ -33,7 +34,8 @@ export class MyApp {
       {component: GeneratedTestPage, title: 'Generated Page', icon: 'home'},
       {component: AlertPage, title: 'Alert Page', icon: 'alert'},
       {component: ButtonTestPage, title: 'Button Test', icon: 'tennisball'},
-      {component: CardTestPage, title: 'Card Test', icon: 'map'}
+      {component: CardTestPage, title: 'Card Test', icon: 'map'},
+      {component: IconTestPage, title: 'Icon Test', icon: 'ionic'}
 
     ]
 
