@@ -5,7 +5,8 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 import { HomePage } from '../pages/home/home';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 import { GeneratedTestPage } from '../pages/generated-test/generated-test';
-import { AlertPage } from '../pages/alert/alert'
+import { AlertPage } from '../pages/alert/alert';
+import { ButtonTestPage } from '../pages/button-test/button-test'
 
 
 
@@ -29,7 +30,8 @@ export class MyApp {
       {component: HomePage, title: 'Home', icon: 'home'},
       {component: MenuTestPage, title: 'Menu Test', icon: 'menu'},
       {component: GeneratedTestPage, title: 'Generated Page', icon: 'home'},
-      {component: AlertPage, title: 'Alert Page', icon: 'alert'}
+      {component: AlertPage, title: 'Alert Page', icon: 'alert'},
+      {component: ButtonTestPage, title: 'Button Test', icon: 'tennisball'}
 
     ]
 
