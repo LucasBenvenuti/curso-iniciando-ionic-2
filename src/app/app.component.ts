@@ -6,7 +6,8 @@ import { HomePage } from '../pages/home/home';
 import { MenuTestPage } from '../pages/menu-test/menu-test';
 import { GeneratedTestPage } from '../pages/generated-test/generated-test';
 import { AlertPage } from '../pages/alert/alert';
-import { ButtonTestPage } from '../pages/button-test/button-test'
+import { ButtonTestPage } from '../pages/button-test/button-test';
+import { CardTestPage } from '../pages/card-test/card-test';
 
 
 
@@ -31,7 +32,8 @@ export class MyApp {
       {component: MenuTestPage, title: 'Menu Test', icon: 'menu'},
       {component: GeneratedTestPage, title: 'Generated Page', icon: 'home'},
       {component: AlertPage, title: 'Alert Page', icon: 'alert'},
-      {component: ButtonTestPage, title: 'Button Test', icon: 'tennisball'}
+      {component: ButtonTestPage, title: 'Button Test', icon: 'tennisball'},
+      {component: CardTestPage, title: 'Card Test', icon: 'map'}
 
     ]
 

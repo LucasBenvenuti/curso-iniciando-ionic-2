@@ -7,6 +7,7 @@ import { GeneratedTestPage } from '../pages/generated-test/generated-test';
 import { ConnectionService } from '../providers/connection-service';
 import { AlertPage } from '../pages/alert/alert';
 import { ButtonTestPage } from '../pages/button-test/button-test';
+import { CardTestPage } from '../pages/card-test/card-test';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ButtonTestPage } from '../pages/button-test/button-test';
     MenuTestPage,
     GeneratedTestPage,
     AlertPage,
-    ButtonTestPage
+    ButtonTestPage,
+    CardTestPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -27,7 +29,8 @@ import { ButtonTestPage } from '../pages/button-test/button-test';
     MenuTestPage,
     GeneratedTestPage,
     AlertPage,
-    ButtonTestPage
+    ButtonTestPage,
+    CardTestPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
