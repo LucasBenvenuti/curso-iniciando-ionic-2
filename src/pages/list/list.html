@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <button menuToggle="left">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      List
+    </ion-title>
+
+    <ion-buttons right>
+      <button menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+  <ion-item-group>
+    <ion-item-divider><h2>Game Of Thrones</h2></ion-item-divider>
+    <ion-item-sliding *ngFor="let p of personagens">
+      <ion-item> {{ p }} </ion-item>
+      <ion-item-options>
+        <button ion-button small>
+          <ion-icon name='more'></ion-icon>
+          Detalhes
+        </button>
+        <button ion-button small>
+          <ion-icon name='text'></ion-icon>
+          Mensagem
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-item-group>
+</ion-list>
+
+</ion-content>

@@ -10,6 +10,7 @@ import { ButtonTestPage } from '../pages/button-test/button-test';
 import { CardTestPage } from '../pages/card-test/card-test';
 import { IconTestPage } from '../pages/icon-test/icon-test';
 import { InputsPage } from '../pages/inputs/inputs';
+import { ListPage } from '../pages/list/list';
 
 
 @Component({
@@ -36,7 +37,8 @@ export class MyApp {
       {component: ButtonTestPage, title: 'Button Test', icon: 'tennisball'},
       {component: CardTestPage, title: 'Card Test', icon: 'map'},
       {component: IconTestPage, title: 'Icon Test', icon: 'ionic'},
-      {component: InputsPage, title: 'Inputs', icon: 'game-controller-b'}
+      {component: InputsPage, title: 'Inputs', icon: 'game-controller-b'},
+      {component: ListPage, title: 'List', icon: 'game-controller-a'}
 
     ]
 

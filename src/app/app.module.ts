@@ -10,6 +10,7 @@ import { ButtonTestPage } from '../pages/button-test/button-test';
 import { CardTestPage } from '../pages/card-test/card-test';
 import { IconTestPage } from '../pages/icon-test/icon-test';
 import { InputsPage } from '../pages/inputs/inputs';
+import { ListPage } from '../pages/list/list';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InputsPage } from '../pages/inputs/inputs';
     ButtonTestPage,
     CardTestPage,
     IconTestPage,
-    InputsPage
+    InputsPage,
+    ListPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -36,7 +38,8 @@ import { InputsPage } from '../pages/inputs/inputs';
     ButtonTestPage,
     CardTestPage,
     IconTestPage,
-    InputsPage
+    InputsPage,
+    ListPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
