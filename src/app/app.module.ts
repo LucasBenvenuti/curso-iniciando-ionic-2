@@ -9,6 +9,7 @@ import { AlertPage } from '../pages/alert/alert';
 import { ButtonTestPage } from '../pages/button-test/button-test';
 import { CardTestPage } from '../pages/card-test/card-test';
 import { IconTestPage } from '../pages/icon-test/icon-test';
+import { InputsPage } from '../pages/inputs/inputs';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { IconTestPage } from '../pages/icon-test/icon-test';
     AlertPage,
     ButtonTestPage,
     CardTestPage,
-    IconTestPage
+    IconTestPage,
+    InputsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -33,7 +35,8 @@ import { IconTestPage } from '../pages/icon-test/icon-test';
     AlertPage,
     ButtonTestPage,
     CardTestPage,
-    IconTestPage
+    IconTestPage,
+    InputsPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

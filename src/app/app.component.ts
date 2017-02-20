@@ -9,7 +9,7 @@ import { AlertPage } from '../pages/alert/alert';
 import { ButtonTestPage } from '../pages/button-test/button-test';
 import { CardTestPage } from '../pages/card-test/card-test';
 import { IconTestPage } from '../pages/icon-test/icon-test';
-
+import { InputsPage } from '../pages/inputs/inputs';
 
 
 @Component({
@@ -35,7 +35,8 @@ export class MyApp {
       {component: AlertPage, title: 'Alert Page', icon: 'alert'},
       {component: ButtonTestPage, title: 'Button Test', icon: 'tennisball'},
       {component: CardTestPage, title: 'Card Test', icon: 'map'},
-      {component: IconTestPage, title: 'Icon Test', icon: 'ionic'}
+      {component: IconTestPage, title: 'Icon Test', icon: 'ionic'},
+      {component: InputsPage, title: 'Inputs', icon: 'game-controller-b'}
 
     ]
 
