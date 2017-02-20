@@ -17,7 +17,7 @@ export class InputsPage {
   senha: string;
 
   entrar() : void {
-    let texto = ('Login' + this.login + 'Senha' + this.senha);
+    let texto = ('Login: ' + this.login + ' Senha: ' + this.senha);
     let alerta = this.Alert.create({
       title: 'Entrando...',
       message: texto
