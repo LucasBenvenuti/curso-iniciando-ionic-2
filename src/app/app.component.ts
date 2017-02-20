@@ -13,6 +13,7 @@ import { InputsPage } from '../pages/inputs/inputs';
 import { ListPage } from '../pages/list/list';
 import { GridPage } from '../pages/grid/grid';
 import { ModalPage } from '../pages/modal/modal';
+import { NavigationPage } from '../pages/navigation/navigation';
 
 @Component({
   templateUrl: 'app.html'
@@ -41,7 +42,8 @@ export class MyApp {
       {component: InputsPage, title: 'Inputs', icon: 'game-controller-b'},
       {component: ListPage, title: 'List', icon: 'game-controller-a'},
       {component: GridPage, title: 'Grid', icon: 'magnet'},
-      {component: ModalPage, title: 'Modal', icon: 'ios-game-controller-a-outline'}
+      {component: ModalPage, title: 'Modal', icon: 'ios-game-controller-a-outline'},
+      {component: NavigationPage, title: 'Navitation', icon: 'ios-game-controller-b-outline'}
 
 
     ]
