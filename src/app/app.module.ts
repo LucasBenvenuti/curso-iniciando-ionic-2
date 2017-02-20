@@ -11,7 +11,9 @@ import { CardTestPage } from '../pages/card-test/card-test';
 import { IconTestPage } from '../pages/icon-test/icon-test';
 import { InputsPage } from '../pages/inputs/inputs';
 import { ListPage } from '../pages/list/list';
-
+import { GridPage } from '../pages/grid/grid';
+import { ModalPage } from '../pages/modal/modal';
+import { ModalLoginPage } from '../pages/modal-login/modal-login';
 @NgModule({
   declarations: [
     MyApp,
@@ -23,7 +25,10 @@ import { ListPage } from '../pages/list/list';
     CardTestPage,
     IconTestPage,
     InputsPage,
-    ListPage
+    ListPage,
+    GridPage,
+    ModalPage,
+    ModalLoginPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -39,7 +44,10 @@ import { ListPage } from '../pages/list/list';
     CardTestPage,
     IconTestPage,
     InputsPage,
-    ListPage
+    ListPage,
+    GridPage,
+    ModalPage,
+    ModalLoginPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

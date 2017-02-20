@@ -1,12 +1,12 @@
 <ion-header>
 
   <ion-navbar>
-
     <button ion-button menuToggle="left">
       <ion-icon name="menu"></ion-icon>
     </button>
-
-    <ion-title>Alert Page</ion-title>
+    <ion-title>
+      Modal
+    </ion-title>
 
     <ion-buttons right>
       <button ion-button menuToggle="right">
@@ -20,10 +20,6 @@
 
 <ion-content padding>
 
-<p>Pagina para alertas!</p>
-
-<p>Olá {{ user }} </p>
-
-<button ion-button block (click)='showAlert()'>Alert Test</button>
+  <button ion-button block (click)='openModal()'>Show Modal</button>
 
 </ion-content>

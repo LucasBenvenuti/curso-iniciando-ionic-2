@@ -11,7 +11,8 @@ import { CardTestPage } from '../pages/card-test/card-test';
 import { IconTestPage } from '../pages/icon-test/icon-test';
 import { InputsPage } from '../pages/inputs/inputs';
 import { ListPage } from '../pages/list/list';
-
+import { GridPage } from '../pages/grid/grid';
+import { ModalPage } from '../pages/modal/modal';
 
 @Component({
   templateUrl: 'app.html'
@@ -38,7 +39,10 @@ export class MyApp {
       {component: CardTestPage, title: 'Card Test', icon: 'map'},
       {component: IconTestPage, title: 'Icon Test', icon: 'ionic'},
       {component: InputsPage, title: 'Inputs', icon: 'game-controller-b'},
-      {component: ListPage, title: 'List', icon: 'game-controller-a'}
+      {component: ListPage, title: 'List', icon: 'game-controller-a'},
+      {component: GridPage, title: 'Grid', icon: 'magnet'},
+      {component: ModalPage, title: 'Modal', icon: 'ios-game-controller-a-outline'}
+
 
     ]
 
