@@ -5,7 +5,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Navigation
+      Tab
     </ion-title>
 
     <ion-buttons right>
@@ -20,6 +20,9 @@
 
 <ion-content padding>
 
-<button ion-button block (click)="abrirPagina()">Abrir página</button>
+<ion-tabs>
+  <ion-tab tabIcon="home" tabTitle="Home" [root]="homePage"></ion-tab>
+  <ion-tab tabIcon="contacts" [root]="contatosPage" tabBadge="5" tabBadgeStyle="danger"></ion-tab>
+</ion-tabs>
 
 </ion-content>

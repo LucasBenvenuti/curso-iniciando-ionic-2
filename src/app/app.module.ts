@@ -15,6 +15,9 @@ import { GridPage } from '../pages/grid/grid';
 import { ModalPage } from '../pages/modal/modal';
 import { ModalLoginPage } from '../pages/modal-login/modal-login';
 import { NavigationPage } from '../pages/navigation/navigation';
+import { TabPage } from '../pages/tab/tab';
+import { HomeTabPage } from '../pages/home-tab/home-tab';
+import { ContatosTabPage } from '../pages/contatos-tab/contatos-tab';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { NavigationPage } from '../pages/navigation/navigation';
     GridPage,
     ModalPage,
     ModalLoginPage,
-    NavigationPage
+    NavigationPage,
+    TabPage,
+    HomeTabPage,
+    ContatosTabPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -51,7 +57,10 @@ import { NavigationPage } from '../pages/navigation/navigation';
     GridPage,
     ModalPage,
     ModalLoginPage,
-    NavigationPage
+    NavigationPage,
+    TabPage,
+    HomeTabPage,
+    ContatosTabPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

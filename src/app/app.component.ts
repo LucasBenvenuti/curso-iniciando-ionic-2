@@ -14,6 +14,9 @@ import { ListPage } from '../pages/list/list';
 import { GridPage } from '../pages/grid/grid';
 import { ModalPage } from '../pages/modal/modal';
 import { NavigationPage } from '../pages/navigation/navigation';
+import { TabPage } from '../pages/tab/tab';
+//import { HomeTabPage } from '../pages/home-tab/home-tab';
+//import { ContatosTabPage } from '../pages/contatos-tab/contatos-tab';
 
 @Component({
   templateUrl: 'app.html'
@@ -43,7 +46,8 @@ export class MyApp {
       {component: ListPage, title: 'List', icon: 'game-controller-a'},
       {component: GridPage, title: 'Grid', icon: 'magnet'},
       {component: ModalPage, title: 'Modal', icon: 'ios-game-controller-a-outline'},
-      {component: NavigationPage, title: 'Navitation', icon: 'ios-game-controller-b-outline'}
+      {component: NavigationPage, title: 'Navitation', icon: 'ios-game-controller-b-outline'},
+      {component: TabPage, title: 'Tab', icon: 'ios-tennisball-outline'}
 
 
     ]
@@ -57,5 +61,3 @@ export class MyApp {
   }
 
 }
-
-//ionicBootstrap(MyApp, [ConnectionService] );
