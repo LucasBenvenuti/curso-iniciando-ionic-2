@@ -1,10 +1,11 @@
 <ion-header>
+
   <ion-navbar>
     <button ion-button menuToggle="left">
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Home
+      Toast
     </ion-title>
 
     <ion-buttons right>
@@ -13,13 +14,12 @@
       </button>
     </ion-buttons>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content padding>
-  Teste texto com padding em content pagina
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
 
-  <button ion-button block (click)="pushPage()">Abrir nova página</button>
+<ion-content padding>
+
+  <button ion-button block (click)='showToast()'>Mostrar Toast</button>
+
 </ion-content>

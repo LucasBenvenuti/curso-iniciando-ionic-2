@@ -17,6 +17,8 @@ import { NavigationPage } from '../pages/navigation/navigation';
 import { TabPage } from '../pages/tab/tab';
 //import { HomeTabPage } from '../pages/home-tab/home-tab';
 //import { ContatosTabPage } from '../pages/contatos-tab/contatos-tab';
+import { ToastPage } from '../pages/toast/toast';
+import { ToolbarPage } from '../pages/toolbar/toolbar';
 
 @Component({
   templateUrl: 'app.html'
@@ -47,7 +49,9 @@ export class MyApp {
       {component: GridPage, title: 'Grid', icon: 'magnet'},
       {component: ModalPage, title: 'Modal', icon: 'ios-game-controller-a-outline'},
       {component: NavigationPage, title: 'Navitation', icon: 'ios-game-controller-b-outline'},
-      {component: TabPage, title: 'Tab', icon: 'ios-tennisball-outline'}
+      {component: TabPage, title: 'Tab', icon: 'ios-tennisball-outline'},
+      {component: ToastPage, title: 'Toast', icon: 'card'},
+      {component: ToolbarPage, title: 'Toolbar', icon: 'pricetags'}
 
 
     ]

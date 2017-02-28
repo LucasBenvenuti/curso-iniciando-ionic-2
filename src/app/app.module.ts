@@ -18,6 +18,8 @@ import { NavigationPage } from '../pages/navigation/navigation';
 import { TabPage } from '../pages/tab/tab';
 import { HomeTabPage } from '../pages/home-tab/home-tab';
 import { ContatosTabPage } from '../pages/contatos-tab/contatos-tab';
+import { ToastPage } from '../pages/toast/toast';
+import { ToolbarPage } from '../pages/toolbar/toolbar';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ContatosTabPage } from '../pages/contatos-tab/contatos-tab';
     NavigationPage,
     TabPage,
     HomeTabPage,
-    ContatosTabPage
+    ContatosTabPage,
+    ToastPage,
+    ToolbarPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -60,7 +64,9 @@ import { ContatosTabPage } from '../pages/contatos-tab/contatos-tab';
     NavigationPage,
     TabPage,
     HomeTabPage,
-    ContatosTabPage
+    ContatosTabPage,
+    ToastPage,
+    ToolbarPage
   ],
   providers: [ConnectionService, {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
