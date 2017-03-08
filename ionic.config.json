@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Ionic2App",
+=======
+  "name": "curso-iniciando-ionic-2",
+>>>>>>> e7a9410204757526754add04699d5936c8cfc78c
   "app_id": "",
   "v2": true,
   "typescript": true
