@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle="left">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Card Test
+    </ion-title>
+
+    <ion-buttons right>
+      <button ion-button menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-card color='dark'>
+  <ion-card-header>Card</ion-card-header>
+  <ion-card-content>
+    <p>Olá Mundo!</p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card color='dark'>
+  <img src="./../../images/img.png">
+
+  <ion-card-content>
+    <ion-card-title>
+      Ionic 2
+    </ion-card-title>
+    <p>Olá Mundo!</p>
+  </ion-card-content>
+
+  <ion-row no-padding>
+    <ion-col text-left>
+      <button ion-button clear small><ion-icon name='star'></ion-icon>Favorite</button>
+    </ion-col>
+
+    <ion-col text-center>
+      <button ion-button clear small icon-left><ion-icon name='musical-notes'></ion-icon>List</button>
+    </ion-col>
+
+    <ion-col text-right>
+      <button ion-button clear small icon-left><ion-icon name='share'></ion-icon>Share</button>
+    </ion-col>
+
+  </ion-row>
+
+</ion-card>
+
+<button ion-button block (click)='voltar()'>Voltar</button>
+
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+
+    <button ion-button menuToggle="left">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Alert Page</ion-title>
+
+    <ion-buttons right>
+      <button ion-button menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<p>Pagina para alertas!</p>
+
+<p>Olá {{ user }} </p>
+
+<button ion-button block (click)='showAlert()'>Alert Test</button>
+
+</ion-content>

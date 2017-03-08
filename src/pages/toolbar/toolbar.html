@@ -1,0 +1,73 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle="left">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Toolbar
+    </ion-title>
+
+    <ion-buttons right>
+      <button ion-button menuToggle="right">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar position='top'>
+    <ion-title>Sub-header</ion-title>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name='contact'></ion-icon>
+      </button>
+      <button ion-button>
+        <ion-icon name='home'></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]='search'></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment [(ngModel)]='segment'>
+      <ion-segment-button value='novos'>
+        <ion-title>Novos</ion-title>
+      </ion-segment-button>
+      <ion-segment-button value='noticias'>
+        <ion-title>Noticias</ion-title>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div [ngSwitch]='segment'>
+
+    <ion-list *ngSwitchCase="'novos'">
+
+      <ion-item>Novo 1</ion-item>
+      <ion-item>Novo 2</ion-item>
+      <ion-item>Novo 3</ion-item>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'noticias'">
+
+      <ion-item>Noticia 1</ion-item>
+      <ion-item>Noticia 2</ion-item>
+      <ion-item>Noticia 3</ion-item>
+
+    </ion-list>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar position='bottom'>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>
